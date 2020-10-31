@@ -1,0 +1,2 @@
+# Nigeria States And Local Govt API Sample
+This repo show the JSON Server REST API usage for Nigeria 36 states and their respective 774 local government areas with their respective senatorial districts. The Nigeria local government is hosted on heroku and it can be consumed using the GET Requests without any need for authentication. the API is in JSON format and therefor can be used or called irrespective of the language of your choice. link to this data is: https://nigeriastateandlocalgovtarea.herokuapp.com/lgalists
