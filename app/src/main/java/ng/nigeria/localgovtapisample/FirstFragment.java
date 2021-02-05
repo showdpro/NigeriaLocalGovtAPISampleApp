@@ -89,7 +89,7 @@ public class FirstFragment extends Fragment {
                     public void run() {
 
 
-                       // lgaFullLists.setText(data);
+                       // lgaFullLists.setText(data)
                         JSONArray jsonArray = null;
                         try {
                             jsonArray = new JSONArray(myResponse);
@@ -106,8 +106,12 @@ public class FirstFragment extends Fragment {
                                 stringBuilder.append("Geo Length: "+listing.getString("Shape_Length")+ "\n");
                                 stringBuilder.append("Geographical Area: "+listing.getString("Shape_Area")+ "\n\n");
 
+                                //Append all values of strings in the Textview using the for loop.
+                                //Note: It is recommended to display this list in recyclerView or listView methods.
                                 lgaFullLists.append(stringBuilder);
 
+                                //Logging the results in the console.
+                                
                                 Log.d("String Results:",stringBuilder.toString());
                             }
                         } catch (JSONException e) {
